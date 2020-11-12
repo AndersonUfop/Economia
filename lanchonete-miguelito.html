@@ -6,10 +6,60 @@
 -->
 <html>
 	<head>
-		<title>Busca LANCHES</title>
+		<title>Miguelito</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<link rel="icon" type="imagem/png" href="images/cafe.png">
+		<style>
+			.line-chart {
+				height:  20px;
+			}
+			div#pos {
+				color: blue;
+				font-size: 24pt;
+			}
+
+			div#neg {
+				color: red;
+				font-size: 24pt;
+			}
+
+			div#mel {
+				color: #000;
+				font-size: 24pt;
+			}
+
+			div#rec {
+				color: #000;
+				font-size: 18pt;
+			}
+
+			div#coments {
+				color: #000;
+				font-size: 20pt;
+			}
+
+			div#rel {
+				color: #000;
+				font-size: 20pt;
+			}
+
+			table#avaliacao {
+				width: 400px;
+			}
+
+			td {
+				width: 200px;
+
+			}
+
+
+
+			
+		</style>
+	
 	</head>
 	<body class="subpage">
 
@@ -18,7 +68,8 @@
 			<header id="header">
 				<div class="inner">
 				  <nav id="nav">
-					  <a href="index.html">Home</a>		
+					  <a href="index.html">Home</a>
+					  <a href="sobre.html">Sobre</a>		
 					  <a href="escolha-lanchonete.php">Lanchonetes</a>
 					  <a href="avaliar.html">Avaliar serviços
 					  <a href="pesquisar.php">Buscar</a></a></section>
@@ -62,64 +113,74 @@
 												<tr>
 													<th>Descrição</th>
 													<th>Preço</th>
+													<th></th>
 													<th>Descrição</th>
 													<th>Preço</th>
-												</tr>
+												</tr> 
 											</thead>
 											<tbody>
 												<tr>
 													<td>1 Suco 200 ml + Cachorro-Quente</td>
 													<td>6.80</td>
+													<th></th>
 													<td>1 Suco 300 ml + Espaguete</td>
 													<td>7.20</td>
 												</tr>
 												<tr>
 													<td>1 Suco 200 ml + Salgado</td>
 													<td>5.60</td>
+													<th></th>
 													<td>Pão com Pernil ESP + Lata</td>
 													<td>14.00</td>
 												</tr>
 												<tr>
 													<td>1 Suco 200 ml + 2 Pásteis Comuns</td>
 													<td>6.00</td>
+													<th></th>
 													<td>Pastel Assado + Suco 200 ml</td>
 													<td>5.60</td>
 												</tr>
 												<tr>
 													<td>Caldo de mandioca</td>
 													<td>5.00</td>
+													<th></th>
 													<td>Pão de Queijo + Café</td>
 													<td>3.30</td>
 												</tr>
 												<tr>
 													<td>Sucos de polpa (água)</td>
 													<td>3.50</td>
+													<th></th>
 													<td>Empada + Suco 200 ml</td>
 													<td>5.60</td>
 												</tr>
 												<tr>
 													<td>Sucos de polpa (leite)</td>
 													<td>4.00</td>
+													<th></th>
 													<td>Cachorro Quente + Suco 200 ml</td>
 													<td>6.80</td>
 												</tr>
 												<tr>
 													<td>Hamburguer Trad</td>
 													<td>8.50</td>
+													<th></th>
 													<td>Coxinha + Suco 200 ml</td>
 													<td>5.60</td>
 												</tr>
 												<tr>
 													<td>X Burguer</td>
 													<td>9.80</td>
-													<td></td>
-													<td></td>
+													<th></th>
+													<td>Refresco (copo de 200 ml)</td>
+													<td>2.00</td>
 												</tr>
 												<tr>
 													<td>X Bacon</td>
 													<td>10.90</td>
-													<td></td>
-													<td></td>
+													<th></th>
+													<td>Refresco ( copo de 300 ml)</td>
+													<td>2.50</td>
 												</tr>
 												<tr>
 													<td>Hamburguer Assado</td>
@@ -175,23 +236,22 @@
 					<hr class="major" />
 
 					
+									<img src="images/compare.png" width="200px" height="200px"
+									style=" position: absolute;
+											margin-top: 100px;
+											margin-left: 800px">
 									<h3>DADOS ESTATÍSTICOS</h3>
 									<i>Baseado numa parcela de 26 alunos da Ufop que responderam a pesquisa</i>
 									<p><br>
-										<strong>Média de clientes: </strong><i>9 (34,6%)</i><br>
-										<strong>Consumo semanal:</strong> <i> De 1 à 2 vezes por semana</i><br>
-										<strong>Venda semanal:</strong><i> [+/-] R$ 103,00</i><br>
-										<strong>Quanto um cliente está disposto a gastar:</strong>
-										<i>[+/-] R$ 11,44</i><br>
-										<strong>Produto com maior demanda: </strong>
-										<i> Salgados</i><br>
+										<strong>Média de clientes: </strong><i>30%</i><br>
+										<strong>Frequêncai de consumo:</strong> <i> De 1 à 2 vezes por semana</i><br>
+										<strong>Lanches com maiores demandas: </strong>
+										<i> <li>Pastel com suco</li>
+											<li> Macarrão 		</li>
+											</i><br>
 
 									</p>
 
-									<h3>GRÁFICOS</h3>
-									<canvas class="line-chart"></canvas>
-
-									<hr class="major"/>
 
 									<h3>RELAÇÃO COM OUTRAS LANCHONETES</h3>
 									<p>
@@ -235,21 +295,97 @@
 										mas é viável para os alunos que só consomem dentro<br> do Campus, mas a Madá oferece preços mais  baixos, porém
 										não oferece<br> muitas opções.</i>
 
-									</p>
+									</p></i>
 
 									<hr class="major"/>
+								</p></i>
 
-									<h3>AVALIAÇÃO GERAL</h3>
-									<p>
-										<h3><b>4 - <i>Muito bom</i></b></h3>
+								<h3>AVALIAÇÃO GERAL</h3>
+									<div class="row">
+						<section class="6u 12u$(medium)">
+							<h2>Avaliação Miguelito</h2>
+							<!-- Tabela -->
+							<div class="table-wrapper">
+										<table id="avaliacao">
+													<th style="text-align: center; text">Característica</th>
+													<th>Avaliação</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Atendimento</td>
+													<td>4</td>
+												</tr>
+												<tr>
+													<td>Espaço</td>
+													<td>3</td>
+												</tr>
+												<tr>
+													<td>Opções</td>
+													<td>4</td>
+												</tr>
+												<tr>
+													<td>Qualidade</td>
+													<td>4</td>
+												</tr>
+												<tr>
+													<td>Preço</td>
+													<td>3</td>
+												</tr>
+												<tr>
+													<td>Custo-Benefício</td>
+													<td>3</td>
+												</tr>
+												<tr>
+													<td>Promoções</td>
+													<td>3</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div id="pos">Pontos Positivos </div>
+									<ul>
+										<li> Atendimento</li>
+										<li> Qualidade</li>
+										<li> Custo-benefício</li>
+										<li>Opções</li>
+										<li>Promoções</li>
+									</ul>
+									<div id="neg">Pontos Negativos </div>
+									<ul>
+										<li> Preço </li>
+										<li> Espaço </li>
+									</ul>
+									<div id="mel"> Como podemos melhorar isto ?</div>
+									<ul>
+										<li> Ampliação do espaço, para os clientes fazerem seus lanches</li>
+										<li> Lanches mais baratos,  que deem uma maior diferença, em <br>relação aos concorrentes. </li>
 
-									</p>
+									</ul>
+								
+									<div id="coments">Comentários Gerais </div>	
+									<br>
+									<p> 	A lanchonete Miguelito fica em 1º lugar entre as 3 lanchonetes localizadas no entorno da Ufop.<br>
+										Possui ótimo atendimento, salgados de boa qualidade, salgados diferenciados, com hambúrgueres, mistos e diversos tipos de salgados.<br>
+										Além do preço, levamos em conta: Qualidade do alimento e Opções de Lanche.<br>
+										Miguelito ofereçe preços melhores que a L'amour Café, seus lanches são melhores e oferece mais opções.<br>
+										Além disso, oferece Xerox, Impressão e encadernação.
+										Ajuda muito o aluno da Ufop, já que não temos mais
+										o Xerox no bloco E.<br>
+										É ideal para o aluno que gosta de lanches mais saborosos, gastando um pouco menos que gasta dentro da Ufop.
+										É uma boa opção, já que oferece combos e promoções, como Salgados e Sucos num preço especial.</p>
 
-									<h4>Comentários</h4>
+										<div id="av">
+										<b style="color: green;"> Recomendado no ponto de vista econômico </b><br>
+										<b style="color: green;"> Recomendado na relação preço-qualidade </b>
+									</div>
+
+									<hr class="major">
+</section>
 									
-
-							</div>	
 			</section>
+		</div>
+			
 
 		<!-- Footer -->
 			<footer id="footer">
