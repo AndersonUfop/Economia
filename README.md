@@ -71,3 +71,7 @@ Este trabalho foi realizado em grupo, com os seguintes membros:
 - Anderson Fernandes
 - Ismael Prado
 - Rafael Valadares
+
+##  Versões do README
+
+[Português 🇧🇷](./README.md)  |  [English 🇺🇸](./README-en.md)
